@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiya Sharma - XR Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS Bundle with Popper (REQUIRED for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+  <!-- NavBar -->
+
+  <!-- Add this in your <head> for smooth scrolling -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      
+      <!-- Add a brand if needed -->
+  
+      <!-- Toggle button for mobile -->
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link home-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link" href="#contributions">Contributions</a>
+          </li> -->
+<!--           <li class="nav-item">
+            <a class="nav-link" href="#research">Research</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+  <div class="container mt-5" id="home">
+    <div class="row align-items-center border p-4 rounded shadow-sm">
+      <!-- Left Section: Profile + Social -->
+      <div class="col-md-5 text-center">
+        <img src="me.jpg" alt="Jiya Sharma" class="profile-img mb-3">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jiya-sharma-33717522a/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Jiyasharma19"><i class="fab fa-github"></i></a>
+          <a href="mailto:jiyasharma192004@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Section: Name + Role + Skills -->
+      <div class="col-md-7 text-center text-md-center">
+        <h1>Jiya Sharma</h1>
+        <p>XR Developer | Unity Developer</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+          <span class="skill-badge">Unity</span>
+          <span class="skill-badge">C#</span>
+          <span class="skill-badge">VR Development</span>
+          <span class="skill-badge">MR Development</span>
+          <span class="skill-badge">C++</span>
+          <span class="skill-badge">Photogrammetry</span>
+          <span class="skill-badge">Blender</span>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section bg-primary text-light"
+        style="margin-top: 8vh; margin-bottom: 8vh; min-height: 80vh;">
+        <div class="container text-center py-5">
+          <h2 class="mb-4">About Me</h2>
+          <h4 class="intro-heading">
+            Hi <span class="wave">👋</span>, I am <strong>Jiya Sharma</strong>
+          </h4>
+          <p class="mb-5 about-description">
+             <p>
+                I am an XR Developer with over <span class="highlight">3 years</span> of practical experience in
+                <span class="highlight"> developing, designing and delivering immersive XR solutions</span>. Positioned at the
+                intersection of <span class="highlight">Extended Reality (XR) and Artificial Intelligence (AI)</span>, I bring a
+                strong understanding of how emerging technologies can reshape industries, and I apply that vision to every project I
+                undertake.
+                <br>
+                My journey in immersive technologies began during my first year of college, where I worked as a 
+                <span class="highlight">Research Engineer</span>, exploring real-world applications of AR, VR, and MR across
+                multiple domains. As a <span class="highlight">member of a Research Lab</span>, I not only contributed to pioneering
+                experiments but also took on leadership responsibilities in guiding the team.
+                <br>
+                With a keen focus on <span class="highlight">photorealism and 3D asset development</span>, I have conducted
+                extensive research in <span class="highlight">photogrammetry</span>, building efficient pipelines to produce highly
+                detailed yet optimized models tailored for XR environments.
+              </p>
+
+            <br>
+            Beyond the tech, I’m a <span class="highlight">strong believer in the power of collaboration, communication,
+              and continuous learning</span>. I bring to the table:
+          </p>
+
+          <div class="skills-box d-flex flex-wrap justify-content-center gap-10">
+            <span class="skill-badge">Presentation skills</span>
+            <span class="skill-badge">Team Coordination</span>
+            <span class="skill-badge">Cross-discipline Collaboration</span>
+            <span class="skill-badge">Product Management</span><br>
+            <div class="flex-break"></div> <!-- Line break here -->
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- My projects -->
+      <div class="justify-content-center text-md-center" id="projects">
+        <h1>Projects</h1>
+      </div>
+      <div class="section-container">
+        <h2 class="section-heading text-center mb-4">My Projects</h2>
+
+        <div class="position-relative px-3">
+          <!-- Scroll Buttons -->
+
+          <button class="btn btn-secondary position-absolute top-50 start-0 translate-middle-y z-3 slider-btn"
+            onclick="scrollVideos(-1, this)">
+            &#8592;
+          </button>
+          <button class="btn btn-secondary position-absolute top-50 end-0 translate-middle-y z-3 slider-btn"
+            onclick="scrollVideos(1, this)">
+            &#8594;
+          </button>
+
+          <!-- Scrollable video container -->
+          <div class="overflow-hidden">
+            <div id="video-slider" class="d-flex flex-nowrap"
+              style="overflow-x: auto; scroll-behavior: smooth; gap: 1rem;">
+
+              <!-- Cards (ensure fixed width!) -->
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://youtube.com/shorts/Zq_a4Gu6uZ4?si=1OIKeFGlCEJxPOxF" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                   <p class="card-text">
+                    <span class="highlight-dark">Indoor Navigation for Homes</span> is an augmented reality experience that allows
+                    users to <span class="highlight-dark">walk through their house virtually before it is built</span>. By visualizing
+                    the layout in advance, homeowners can explore rooms, navigate spaces, and gain a realistic sense of scale and design,
+                    helping them make informed decisions about their future living environment.
+                  </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://youtube.com/shorts/CwAvZ5VLJgw?si=Yd6Mi67EMXpJTbMK" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text">
+                    <span class="highlight-dark">3D Models in Web AR</span> enable users to <span class="highlight-dark">interact
+                    with photorealistic models directly in their browser</span>. These models, created by me using advanced
+                    <span class="highlight-dark">photogrammetry techniques</span>, can be zoomed, rotated, and explored with simple
+                    gestures such as pinch and swipe. This provides an immersive and intuitive way to examine objects in detail, making
+                    them accessible without the need for specialized applications.
+                  </p>
+
+
+                  </div>
+                </div>
+              </div>
+<!-- 
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/SmIjlj0WVmo" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">StrikeXR</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">StrikeXR</span> is a high-fidelity combat training platform developed
+                      for the <span class="highlight-dark">Indian Defense forces</span>, combining <span
+                        class="highlight-dark">VR</span>, <span class="highlight-dark">AR</span>, and <span
+                        class="highlight-dark">AI</span> to simulate complex battlefield scenarios. It delivers
+                      <span class="highlight-dark">360° interactive simulations</span> across varied terrains—<span
+                        class="highlight-dark">urban</span>, <span class="highlight-dark">jungle</span>, <span
+                        class="highlight-dark">desert</span>, and <span
+                        class="highlight-dark">counter-insurgency</span>—enhancing soldier reflexes, decision-making,
+                      and tactical coordination. With <span class="highlight-dark">multiplayer support</span>, squads
+                      can train together in synchronized virtual missions. StrikeXR also integrates <span
+                        class="highlight-dark">real-time analytics</span> and <span class="highlight-dark">adaptive
+                        feedback</span>, enabling personalized performance tracking and continuous tactical
+                      improvement—all within a safe, cost-effective virtual environment designed to elevate <span
+                        class="highlight-dark">mission readiness</span>.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+ -->
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dWpQ6ZIWgy0" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">PlanXR</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">PlanXR</span> is a <span class="highlight-dark">Mixed Reality
+                        (MR)</span> application developed to transform mission
+                      planning for the <span class="highlight-dark">Territorial Army</span> by replacing traditional
+                      map-based approaches with immersive <span class="highlight-dark">3D terrain exploration</span>.
+                      The app enables officers to virtually interact with real-world landscapes, analyze geographical
+                      challenges, and make informed, data-driven decisions. Featuring <span
+                        class="highlight-dark">multi-user collaboration</span>, PlanXR allows teams to co-plan missions
+                      in real time within a shared virtual space—enhancing coordination, reducing risk, and
+                      significantly improving <span class="highlight-dark">operational readiness</span> and <span
+                        class="highlight-dark">strategic execution</span>.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              
+
+<!--               <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ogL3t1Iky0o" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">ByteSpace</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">ByteSpace</span> is a <span class="highlight-dark">VR/MR</span>
+                      application built for <span class="highlight-dark">data center managers</span> and
+                      <span class="highlight-dark">infrastructure planners</span> to design and visualize data centers
+                      before construction begins. Using highly detailed, photogrammetry-based <span
+                        class="highlight-dark">3D models</span> of servers, the app allows users to manually place,
+                      arrange, and interact with equipment in a life-sized virtual environment. It also features an
+                      <span class="highlight-dark">AI-assisted topology generator</span>, which automatically lays out
+                      optimized data center configurations in real time based on user input—streamlining the planning
+                      process and reducing costly post-construction changes.
+                    </p>
+
+                    <a href="https://www.meta.com/en-gb/experiences/topologyxr/8754157244597877/" class="btn btn-primary mt-auto">Download on Meta Store</a>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/nA4qaKeVBL8" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Xrchitect</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">Xrchitect</span> is a <span class="highlight-dark">VR/MR</span>
+                      application tailored for <span class="highlight-dark">interior design professionals</span>,
+                      students, and educators to create and visualize design concepts in real-time. Unlike traditional
+                      <span class="highlight-dark">2D design tools</span>, Xrchitect immerses users in a fully
+                      interactive, realistic <span class="highlight-dark">3D environment</span>, allowing them to design
+                      and manipulate spaces within actual or virtual rooms. This powerful tool enables users to
+                      experiment with layouts, furnishings, and color schemes before committing to real-world changes,
+                      offering unmatched immersion and realism for both <span class="highlight-dark">educational</span>
+                      and <span class="highlight-dark">professional</span> use.
+                    </p>
+
+                    <a href="https://www.meta.com/en-gb/experiences/xrchitect/8001533676569691/" class="btn btn-primary mt-auto">Download on Meta Store</a>
+                  </div>
+                </div>
+              </div>
+
+<!--               <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/x0bH92XZc-E" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Autistica</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">Autistica</span> is a compassionate <span
+                        class="highlight-dark">VR</span> application designed to support individuals
+                      with <span class="highlight-dark">autism</span> through immersive, multisensory therapies. The app
+                      offers five targeted therapy
+                      modules—<span class="highlight-dark">Aural Therapy</span>, <span
+                        class="highlight-dark">EMDR</span>, <span class="highlight-dark">Music Therapy</span>, <span
+                        class="highlight-dark">Speech Pathology</span>, and <span class="highlight-dark">Puzzle-Based
+                        Cognitive Exercises</span>—each crafted to provide calm, engagement, and structured stimulation.
+                      By creating safe, controlled virtual environments tailored to unique sensory needs, Autistica
+                      empowers users to explore therapeutic practices in a more accessible and personalized way.
+                    </p>
+
+                  </div>
+                </div>
+              </div> -->
+<!--               <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Ef7YVK-0TH0" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">MindMuseum</h5>
+                    <p class="card-text">
+                      <span class="highlight-dark">MindMuseum</span> is an innovative <span
+                        class="highlight-dark">VR</span> application that combines <span
+                        class="highlight-dark">Artificial Intelligence</span> with immersive technology to create
+                      dynamic, interactive museum experiences in real time. Users can explore personalized exhibitions,
+                      where <span class="highlight-dark">AI</span> generates art, artifacts, and displays on command,
+                      responding to voice or text-based input. Whether it’s <span class="highlight-dark">ancient
+                        civilizations</span> or <span class="highlight-dark">futuristic inventions</span>, MindMuseum
+                      tailors content instantly—making it a powerful educational and creative tool that redefines how we
+                      experience museums in the digital age.
+                    </p>
+
+                  </div>
+                </div>
+              </div> -->
+              
+              <!-- Add more cards here -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hobby Projects -->
+      <div class="section-container">
+        <h2 class="section-heading text-center mb-4">Hobby Projects</h2>
+
+        <div class="position-relative px-3">
+          <!-- Scroll Buttons -->
+          <button class="btn btn-secondary position-absolute top-50 start-0 translate-middle-y z-3 slider-btn"
+            onclick="scrollVideos(-1, this)">
+            &#8592;
+          </button>
+          <button class="btn btn-secondary position-absolute top-50 end-0 translate-middle-y z-3 slider-btn"
+            onclick="scrollVideos(1, this)">
+            &#8594;
+          </button>
+
+          <!-- Scrollable video container -->
+          <div class="overflow-hidden">
+            <div id="video-slider" class="d-flex flex-nowrap"
+              style="overflow-x: auto; scroll-behavior: smooth; gap: 1rem;">
+
+              <!-- Cards (ensure fixed width!) -->
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://youtu.be/1cYfsCaBeFY?si=SPw15gIcxE5PVrJN" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                   <p class="card-text">
+                      <span class="highlight-dark">Car Driving Simulation in Unity</span> is a  gaming project that allows
+                      players to <span class="highlight-dark">drive and control cars in a virtual environment</span>. Developed using
+                      Unity’s physics engine, it features realistic acceleration, braking, and steering mechanics to deliver an authentic
+                      driving experience. Players can explore custom-built tracks, practice maneuvering skills, and test car performance
+                      under different conditions. This project demonstrates my ability to design <span class="highlight-dark">gameplay
+                      mechanics, physics-driven interactions, and engaging desktop game experiences</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://youtu.be/W6jxb_npzag?si=6O_SvRXQ7hqiYGfG" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                  <p class="card-text">
+                    <span class="highlight-dark">MR Multiplayer Experience</span> is a mixed reality project that enables multiple users
+                    to <span class="highlight-dark">connect, collaborate, and interact within a shared real-world environment</span>.
+                    By blending physical and digital spaces, participants can see, engage with, and manipulate virtual objects together
+                    in real time, while maintaining full awareness of their surroundings. This project showcases my expertise in <span
+                    class="highlight-dark">networked interactions, spatial computing, and immersive MR experiences</span>, highlighting
+                    the potential of collaborative mixed reality applications.
+                  </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://youtu.be/W6jxb_npzag?si=ASAsVxbf5F8Jqqy1" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                   <p class="card-text">
+                    <span class="highlight-dark">Educational VR App – Server Exploration</span> is a virtual reality experience designed
+                    to help learners <span class="highlight-dark">understand the internal components of a server</span> in an immersive
+                    and interactive way. Users can explore detailed 3D models of hardware parts such as the CPU, GPU, RAM, motherboard,
+                    and cooling systems, gaining a hands-on perspective of how each component functions. This project demonstrates my
+                    ability to design <span class="highlight-dark">educational VR experiences, 3D asset creation, and interactive
+                    learning environments</span> that simplify complex technical concepts.
+                  </p>
+                  </div>
+                </div>
+              </div>
+<!-- 
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/68U9yQCibsM" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Isometric-Garden</h5>
+                    <p class="card-text">
+                      An immersive, interactive garden simulator where users can design and place their own virtual
+                      garden in an <span class="highlight-dark">isometric view</span>. Developed for <span
+                        class="highlight-dark">Octernship</span>, the app integrates API calls to provide real-time
+                      plant information and dynamic interactions.
+                    </p>
+                    <a href="https://github.com/SethiShreya/Isometric-Garden" class="btn btn-primary mt-auto">Check out Github Repo</a>
+                  </div>
+                </div>
+              </div> -->
+
+<!--               <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/oZnmkJlJxsQ" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Galaxy Shooter</h5>
+                    <p class="card-text">
+                      An action-packed space shooter where players control a spaceship to battle waves of enemies in a
+                      visually captivating galaxy. The game features <span class="highlight-dark">power-ups</span> and
+                      increasing difficulty, providing hours of fast-paced fun.
+                    </p>
+
+                    <a href="https://sethishreya.github.io/Galaxy-Shooter/" class="btn btn-primary mt-auto">Play Game</a>
+                  </div>
+                </div>
+              </div> -->
+
+<!--               <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/xgk8vFzxhTc" allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">DriveVR</h5>
+                    <p class="card-text">
+                      A <span class="highlight-dark">VR driving experience</span> where users take the wheel in a fully
+                      immersive simulation of real-world roads, powered by <span class="highlight-dark">Google
+                        Maps</span> and <span class="highlight-dark">OpenStreetMap</span>. It offers a realistic driving
+                      experience for training or leisure, allowing players to explore virtual environments while
+                      navigating through them.
+                    </p>
+                    <a href="https://github.com/SethiShreya/Car-Simulation" class="btn btn-primary mt-auto">Check out Github Repo</a>
+                  </div>
+                </div>
+              </div>
+ -->
+              <!-- Add more cards here -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- 
+      <div class="justify-content-center text-md-center" id="research">
+        <h1>Research</h1>
+      </div> -->
+
+      <!-- Open cv Reserch -->
+
+<!--       <div class="section-container">
+        <h2 class="section-heading">Computer Vision Research</h2>
+
+        <div class="container-fluid my-4"> <!-- Changed to container-fluid -->
+<!--           <div class="row g-4"> <!-- Removed justify-content-center --> --> -->
+<!-- 
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/E0r87GrdC7A" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Single Kinect with Unity</h5>
+                  <p class="card-text">
+                    In this research, I utilized a single <span class="highlight-dark">Kinect sensor</span> integrated
+                    with <span class="highlight-dark">Unity</span> to capture <span class="highlight-dark">3D point
+                      clouds</span> of a person in real time. The system streams depth data from the Kinect to generate
+                    detailed point cloud representations, enabling interactive <span class="highlight-dark">3D
+                      visualizations</span> for applications in <span class="highlight-dark">motion tracking</span> and
+                    <span class="highlight-dark">virtual environments</span>.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+
+<!--             <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/VIb4JDBwt-Y" allowfullscreen></iframe>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Multiple Kinect for Holographic 3D Experience</h5>
+                  <p class="card-text">
+                    For this project, I am developing a <span class="highlight-dark">holographic 3D experience</span> by
+                    synchronizing data from multiple Kinect sensors. The aim is to combine depth information from
+                    various angles to create an immersive, multi-perspective <span class="highlight-dark">3D
+                      model</span>, enhancing realism and interactivity for <span class="highlight-dark">holographic
+                      visualization</span> in <span class="highlight-dark">computer vision applications</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+
+
+      <!-- Photogrammetry Research -->
+
+<!--       <div class="section-container">
+        <h2 class="section-heading">Photogrammetry Research</h2>
+        <p class="card-text">
+          I conducted in-depth research to develop an optimized process for creating <span
+            class="highlight-dark">photorealistic models</span> of complex objects, like servers, involving scanning,
+          reconstruction, manual fixing, <span class="highlight-dark">texturing</span>, <span class="highlight-dark">UV
+            mapping</span>, and optimization. Check out the models below:
+        </p>
+        <div class="container-fluid my-4"> <!-- Changed to container-fluid -->
+<!--           <div class="row g-4"> <!-- Removed justify-content-center --> -->
+
+<!--             <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <div id="card">
+                    <model-viewer src="models/310.glb" ios-src="models/310.usdz"
+                      poster="https://xrvisionlabs.com/wp-content/uploads/loading.svg" autoplay alt="A 3D model"
+                      shadow-intensity="1" scale="1 1 1" exposure="1" camera-controls touch-action="pan-y" auto-rotate>
+                    </model-viewer>
+
+                  </div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">310 Server</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <div id="card">
+                    <model-viewer src="models/Lab_2.glb" ios-src="models/Lab.usdz"
+                      poster="https://xrvisionlabs.com/wp-content/uploads/loading.svg" autoplay alt="A 3D model"
+                      shadow-intensity="1" scale="1 1 1" exposure="1" camera-controls touch-action="pan-y" auto-rotate>
+                    </model-viewer>
+
+                  </div>
+ -->
+<!--                 </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Virtual Lab</h5>
+                </div>
+              </div>
+            </div> --> -->
+<!--             
+          </div>
+        </div>
+      </div> -->
+      <div class="d-flex justify-content-center mt-4">
+        <a href="#home" class="btn btn-outline-primary px-4 py-1 fs-5" role="button">
+          End of Page
+        </a>
+      </div>
+      
+
+
+
+
+    </div>
+
+
+  </div>
+<!--   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script> -->
+</body>
+
+</html>
